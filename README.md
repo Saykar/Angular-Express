@@ -1,2 +1,2 @@
 # Angular-Express
-Nodejs, AngularJS ExpressJS
+Node.js, ExpressJS,  AngularJS 

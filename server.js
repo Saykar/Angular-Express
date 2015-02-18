@@ -45,9 +45,6 @@
 
     // create todo and send back all todos after creation
     app.post('/api/todos', function(req, res) {
-      console.log(req.headers);
-      console.log(req.body.text);
-      console.log("VINAY");
 
         // create a todo, information comes from AJAX request from Angular
         Todo.create({
@@ -66,6 +63,24 @@
         });
 
     });
+
+    // delete a todo
+    app.delete('/api/todos/:todo_id', function(req, res) {
+        Todo.remove({
+            _id : req.params.todo_id
+        }, function(err, todo) {
+            if (err)
+                res.send(err);
+
+            // get and return all the remaining todos
+            Todo.find(function(err, todos) {
+                if (err)
+                    res.send(err)
+                res.json(todos);
+            });
+        });
+    });
+
     // listen (start app with node server.js) ======================================
     app.listen(8080);
     console.log("App listening on port 8080");

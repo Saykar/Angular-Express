@@ -1,2 +1,6 @@
 # Angular-Express
-Node.js, ExpressJS,  AngularJS 
+
+-RESTful Node API using Express
+-MongoDB interaction using mongoose
+-Angular AJAX $http calls
+-Single page application w/ no refreshes

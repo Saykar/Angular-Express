@@ -8,8 +8,7 @@
 
     // configuration =================
 
-    // connect to mongoDB database on modulus.io
-    // mongoose.connect('mongodb://node:node@mongo.onmodulus.net:27017/uwO3mypu');
+    // connect to mongoDB database 
     mongoose.connect('mongodb://localhost/myapp');
 
     // set the static files location /public/img will be /img for users

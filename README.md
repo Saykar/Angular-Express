@@ -1,9 +1,9 @@
 # Angular-Express
 
--RESTful Node.js API using Express framework
--MongoDB interaction using mongoose
--Angular AJAX  for http calls
--Single page application with no refreshes
+- Built RESTful Node API using MEAN (Mongo, Express, Angular, Node) stack.
+- Interacted with MongoDB using mongoose.
+- Built front-end using Angular to make AJAX http calls.
+- Single page application with no refreshes
 
 
 To run:
